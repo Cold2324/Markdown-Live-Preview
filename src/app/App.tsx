@@ -1,5 +1,13 @@
-const App: React.FC = () => {
-  return <div>hello world</div>;
-};
+import { useState } from 'react'
+import LeftMenu from './components/LeftMenu/LeftMenu'
 
-export default App;
+const App: React.FC = () => {
+  const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false)
+  return (
+    <main>
+      <LeftMenu isOpenMenu={isOpenMenu} setIsOpenMenu={setIsOpenMenu} />
+    </main>
+  )
+}
+
+export default App
