@@ -3,14 +3,25 @@ import view from '../../assets/view.svg'
 import './WritterTopMenu.css'
 
 interface WritterTopMenuProps {
-  handleOpenMenu: () => void
+  setIsOpenMenu: (isOpenMenu: boolean) => void
   isOpenMenu: boolean
+  isPreview: boolean
+  setIsPreview: (isPreview: boolean) => void
 }
 
 const WritterTopMenu: React.FC<WritterTopMenuProps> = (
   props: WritterTopMenuProps
 ) => {
-  const { handleOpenMenu, isOpenMenu } = props
+  const { setIsOpenMenu, isOpenMenu, isPreview, setIsPreview } = props
+
+  const handleOpenMenu = () => {
+    setIsOpenMenu(true)
+  }
+
+  const handlePreview = () => {
+    setIsPreview(!isPreview)
+  }
+
   return (
     <div className="writter-top-menu--container">
       {!isOpenMenu && (
@@ -21,7 +32,12 @@ const WritterTopMenu: React.FC<WritterTopMenuProps> = (
           alt="sidebar icon button"
         />
       )}
-      <img src={view} id="view--icon" alt="view icon button" />
+      <img
+        src={view}
+        id="view--icon"
+        alt="view icon button"
+        onClick={handlePreview}
+      />
     </div>
   )
 }
