@@ -1,4 +1,5 @@
 import sidebar from '../../assets/sidebar.svg'
+import view from '../../assets/view.svg'
 import './WritterTopMenu.css'
 
 interface WritterTopMenuProps {
@@ -20,6 +21,7 @@ const WritterTopMenu: React.FC<WritterTopMenuProps> = (
           alt="sidebar icon button"
         />
       )}
+      <img src={view} id="view--icon" alt="view icon button" />
     </div>
   )
 }
