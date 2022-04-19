@@ -33,6 +33,7 @@ const WritterTopMenu: React.FC<WritterTopMenuProps> = (
           alt="sidebar icon button"
         />
       )}
+      {isOpenMenu && <div></div>}
       <div className="action-icon-buttons--container">
         <img src={download} alt="download icon button" id="download--icon" />
         <img
