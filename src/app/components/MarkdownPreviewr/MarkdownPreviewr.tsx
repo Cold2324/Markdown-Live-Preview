@@ -11,7 +11,7 @@ const MarkdownPreviewr: React.FC<MarkdownPreviewrProps> = (
   const { text } = props
   return (
     <section className="markdown-previewr--container">
-      <MarkdownPreview source={text} />
+      <MarkdownPreview className="markdown--preview" source={text} />
     </section>
   )
 }
