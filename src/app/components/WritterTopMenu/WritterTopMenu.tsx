@@ -1,5 +1,6 @@
 import sidebar from '../../assets/sidebar.svg'
 import view from '../../assets/view.svg'
+import download from '../../assets/download.svg'
 import './WritterTopMenu.css'
 
 interface WritterTopMenuProps {
@@ -32,12 +33,15 @@ const WritterTopMenu: React.FC<WritterTopMenuProps> = (
           alt="sidebar icon button"
         />
       )}
-      <img
-        src={view}
-        id="view--icon"
-        alt="view icon button"
-        onClick={handlePreview}
-      />
+      <div className="action-icon-buttons--container">
+        <img src={download} alt="download icon button" id="download--icon" />
+        <img
+          src={view}
+          id="view--icon"
+          alt="view icon button"
+          onClick={handlePreview}
+        />
+      </div>
     </div>
   )
 }

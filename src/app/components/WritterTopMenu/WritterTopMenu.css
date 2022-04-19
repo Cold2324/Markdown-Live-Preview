@@ -9,6 +9,20 @@
   padding: 10px;
 }
 
+.action-icon-buttons--container {
+  display: flex;
+  gap: 10px;
+}
+
+#download--icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
 #view--icon {
   width: 30px;
   height: 30px;
