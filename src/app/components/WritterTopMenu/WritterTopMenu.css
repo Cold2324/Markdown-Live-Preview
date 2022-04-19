@@ -12,6 +12,7 @@
 .action-icon-buttons--container {
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 
 #download--icon {
@@ -26,6 +27,15 @@
 #view--icon {
   width: 30px;
   height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#save--icon {
+  width: 24px;
+  height: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
