@@ -36,8 +36,8 @@ const WritterTopMenu: React.FC<WritterTopMenuProps> = (
       )}
       {isOpenMenu && <div></div>}
       <div className="action-icon-buttons--container">
-        <img src={save} alt="save icon button" id="save--icon" />
-        <img src={download} alt="download icon button" id="download--icon" />
+        {/* <img src={save} alt="save icon button" id="save--icon" />
+        <img src={download} alt="download icon button" id="download--icon" /> */}
         <img
           src={view}
           id="view--icon"

@@ -13,7 +13,7 @@ const LeftMenu: React.FC<LeftMenuProps> = (props: LeftMenuProps) => {
   }
   return (
     <header className="leftmenu--container">
-      <h1>G Note</h1>
+      <h1>Markdown</h1>
       {isOpenMenu && (
         <img
           src={sidebar}
